@@ -4,7 +4,7 @@ const Promise = require('bluebird');
 
 const base = 'https://www.builtinnyc.com';
 
-const companyMap = new Map();
+let companies = [];
 
 // gets initial data for one page
 const loadPage = (page) => axios.get(base + page)
@@ -16,22 +16,32 @@ const getNameLink = ($) => {
   $('.company-card').each((i, el) => {
       let name = $(el).find('.title').text();
       let link = $('a', '.wrap-view-page', el).attr('href');
-      nameLink.push([name, link]);
+      if (link !== 'undefined'){
+        nameLink.push([name, link]);
+      }
     });
+  //console.log(nameLink)
   return nameLink;
 }
 
-// helper function for getSitePromises
+// helper function for getSites
 const getSite = (name, link) => axios.get(base + link)
   .then(res => {
     let $ = cheerio.load(res.data);
     let website = $('a', '.field_company_website').attr('href');
-    console.log(website)
-    companyMap.set(name, website);
+    //console.log(website)
+    if (website !== 'undefined'){
+      let company = new Object()
+      company.name = name;
+      company.website = website;
+      console.log(company)
+      companies.push(company)
+    }
   })
+  .catch(err => console.log(err))
 
-const getSitePromises = (nameLink) =>
-  nameLink.map((pair) => getSite(pair[0], pair[1]))
+const getSites = (nameLink) =>
+  Promise.all(nameLink.map((pair) => getSite(pair[0], pair[1])))
 
 // finds all available page links
 const loadPages = () =>
@@ -44,7 +54,6 @@ const loadPages = () =>
       })
       // last page is redundant
       pages.pop()
-      console.log(pages)
       return pages
     })
 
@@ -52,10 +61,16 @@ const loadPages = () =>
 // crawls a page to get all site addresses
 const getPageData = (page) =>
   loadPage('/companies' + page)
-  .then($ => getSitePromises((getNameLink($))))
+  .then($ => getSites((getNameLink($))));
 
 loadPages()
-  .then(pages => Promise.all(pages.map((page) => getPageData(page))))
-  .then(console.log(companyMap))
+  .then(pages => Promise.all(pages.map((page) => {
+    getPageData(page)
+  })))
+  .then(res => {
+    console.log(res)
+    console.log(companies)
+    return companies;
+  })
   .catch(err => console.log(err))
 
