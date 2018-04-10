@@ -27,9 +27,8 @@ const getNameLink = ($) => {
 const getSite = (name, link) => axios.get(base + link)
   .then(res => {
     let $ = cheerio.load(res.data);
-    console.log($)
     let website = $('a', '.field_company_website').attr('href');
-    console.log(website)
+
     companyMap.set(name, website);
   })
 
@@ -39,7 +38,7 @@ const getSitePromises = (nameLink) =>
 
 console.log(getAllCompany()
   .then($ => Promise.all(getSitePromises((getNameLink($)))))
-  .then(res => companyMap)
+  .then(res => console.log(companyMap))
   .catch(err => console.log(err)))
 
 
