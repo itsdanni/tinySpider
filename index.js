@@ -7,35 +7,39 @@ const config = {
   url: base + '/companies?status=all',
 };
 
-let companyMap = new Map();
+const companyMap = new Map();
 
-const getWebsite = (link, name) =>
-  axios.get(base + link)
-    .then(res => {
-      let $ = cheerio.load(res.data);
-      let website = $('a', '.field_company_website').attr('href');
-      companyMap.set(name, website);
-      console.log(companyMap)
-    })
-    .catch(error => {
-      console.log(error);
-    });
+const getAllCompany = () => axios(config)
+  .then(res => cheerio.load(res.data));
 
-axios(config)
-  .then(response => {
-    const $ = cheerio.load(response.data);
-    let companyPromises = [];
-
-    $('.company-card').each((i, el) => {
+// returns an array of companies with name and link tuples
+const getNameLink = ($) => {
+  let nameLink = []
+  $('.company-card').each((i, el) => {
       let name = $(el).find('.title').text();
       let link = $('a', '.wrap-view-page', el).attr('href');
-      companyPromises.push(getWebsite(link, name));
+      nameLink.push([name, link]);
     });
-    console.log(companyPromises);
-    return Promise.all(companyPromises)
-      .then(console.log(companyMap));
+  return nameLink;
+}
+
+// helper function for getSitePromises
+const getSite = (name, link) => axios.get(base + link)
+  .then(res => {
+    let $ = cheerio.load(res.data);
+    console.log($)
+    let website = $('a', '.field_company_website').attr('href');
+    console.log(website)
+    companyMap.set(name, website);
   })
-  .catch(error => {
-    console.log(error);
-  });
+
+const getSitePromises = (nameLink) =>
+  nameLink.map((pair) => getSite(pair[0], pair[1]))
+
+
+console.log(getAllCompany()
+  .then($ => Promise.all(getSitePromises((getNameLink($)))))
+  .then(res => companyMap)
+  .catch(err => console.log(err)))
+
 
