@@ -34,10 +34,18 @@ const getSite = (name, link) => axios.get(base + link)
 const getSitePromises = (nameLink) =>
   nameLink.map((pair) => getSite(pair[0], pair[1]))
 
+// gets company info on one page, returns a cheerio object
+// getAllCompany()
+//   .then($ => Promise.all(getSitePromises((getNameLink($)))))
+//   .then(res => console.log(companyMap))
+//   .catch(err => console.log(err))
 
-getAllCompany()
-  .then($ => Promise.all(getSitePromises((getNameLink($)))))
-  .then(res => console.log(companyMap))
-  .catch(err => console.log(err))
+getAllCompany().then($ => {
+  let pages = []
+  $('a', '.pager__items').each((i, el) => {
+    let page = $(el).attr('href')
+    console.log(page)
+    pages.push(page)
+  })
 
-
+})
