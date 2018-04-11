@@ -30,11 +30,11 @@ const cheerifiyAsync = (link) =>
 function makeCompanyPromise (name, builtInNYC) {
   return cheerifiyAsync(base + builtInNYC)
   .then(companyData => {
-    //console.log('company page data: ', companyData)
+
     let website = getWebsite(companyData)
-    //console.log(website)
+
     let company = new Company(name, builtInNYC, website)
-    //console.log(company)
+
     return company;
   })
   .catch(err => console.log(err));
@@ -46,12 +46,10 @@ function companyPromisesPerPage ($) {
   let companyPromises = [];
   $('.company-card').each((i, el) => {
     let name = getName($, el);
-    //console.log(name)
     let builtInNYC = getBuiltInNYC($, el);
     let companyPromise = makeCompanyPromise(name, builtInNYC);
     companyPromises.push(companyPromise);
   });
-  //console.log(companyPromises)
   return companyPromises;
 }
 
@@ -69,17 +67,15 @@ function getDataFromAllPages(start, end) {
   let pagePromises = arr.map(i => {
     return cheerifiyAsync(base + `/companies?status=all&page=${i}`)
     .then($ => {
-      //console.log('cheerified page data: ', $)
       return companyPromisesPerPage($)
     });
   });
-  //console.log('pagepromises, ', pagePromises)
+
   Promise.all(pagePromises)
   .then(pages => {
     for (let i = start; i < end; i++) {
       Promise.all(pages[i])
       .then(companies => {
-        console.log(companies)
         exportToFile(companies)
       })
       .catch(err => console.log(err));
