@@ -1,108 +1,90 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const Promise = require('bluebird');
+const exportToFile = require('./export').exportToFile;
+
 const base = 'https://www.builtinnyc.com';
-const companies = [];
 
-// prepopulate page links to crawl
-function fillPageLinks () {
-  let pageLinks = []
-  for (let i = 0; i < 139; i++) {
-    pageLinks.push(`/companies?status=all&page=${i}`)
-  }
-  return pageLinks;
+// constructor function for company data object
+function Company(name, builtInNYC, website){
+  this.name = name;
+  this.builtInNYC = builtInNYC;
+  this.website = website;
 }
-// creates a custom axios instance per page, returns an array of page axios
-function makeAxios (pageLinks) {
-  return pageLinks.map(link =>
-    axios.create({
-      url: base + link,
-      timeout: 10000
-    }));
-  }
-
-function getPagesAsync (pageAxios) {
-  return Promise.all(pageAxios.map(pageAxio => {
-    pageAxio()
-    .then(res => {
-      let $ = cheerio.load(res.data);
-      let pageList = []
-      $('.company-card').each((i, el) => {
-        let name = $(el).find('.title').text();
-        let locallink = $('a', '.wrap-view-page', el).attr('href');
-        pageList.push([name, locallink]);
-      });
-
-    })
-  }))
+function getName ($, el) {
+  return $(el).find('.title').text();
 }
+function getBuiltInNYC ($, el) {
+  return $('a', '.wrap-view-page', el).attr('href'); // /company/company.com
+}
+function getWebsite ($) {
+  return $('a', '.field_company_website').attr('href');
+}
+// asynchronously get cheerified data on the specified link
+const cheerifiyAsync = (link) =>
+  axios.get(link)
+  .then(res => cheerio.load(res.data))
+  .catch(err => console.log('error getting page ' + link + err))
 
-// helper function for getSites
-const getSite = (name, link) => axios.get(base + link)
-  .then(res => {
-    let $ = cheerio.load(res.data);
-    let website = $('a', '.field_company_website').attr('href');
+// returns a company object
+function makeCompanyPromise (name, builtInNYC) {
+  return cheerifiyAsync(base + builtInNYC)
+  .then(companyData => {
+    //console.log('company page data: ', companyData)
+    let website = getWebsite(companyData)
     //console.log(website)
-    if (website !== 'undefined'){
-      let company = new Object()
-      company.name = name;
-      company.website = website;
-      console.log(company)
-      companies.push(company)
+    let company = new Company(name, builtInNYC, website)
+    //console.log(company)
+    return company;
+  })
+  .catch(err => console.log(err));
+}
+
+// returns an array of company promises on a page
+function companyPromisesPerPage ($) {
+  // $ is the cheerified data on one page
+  let companyPromises = [];
+  $('.company-card').each((i, el) => {
+    let name = getName($, el);
+    //console.log(name)
+    let builtInNYC = getBuiltInNYC($, el);
+    let companyPromise = makeCompanyPromise(name, builtInNYC);
+    companyPromises.push(companyPromise);
+  });
+  //console.log(companyPromises)
+  return companyPromises;
+}
+
+// creates an array containing integers from [start, end)
+function createArr (start, end) {
+  let arr = [];
+  for (let i = 0; i < end; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+// https://www.builtinnyc.com/companies?status=all&page=138
+function getDataFromAllPages(start, end) {
+  let arr = createArr(start, end)
+  let pagePromises = arr.map(i => {
+    return cheerifiyAsync(base + `/companies?status=all&page=${i}`)
+    .then($ => {
+      //console.log('cheerified page data: ', $)
+      return companyPromisesPerPage($)
+    });
+  });
+  //console.log('pagepromises, ', pagePromises)
+  Promise.all(pagePromises)
+  .then(pages => {
+    for (let i = start; i < end; i++) {
+      Promise.all(pages[i])
+      .then(companies => {
+        console.log(companies)
+        exportToFile(companies)
+      })
+      .catch(err => console.log(err));
     }
   })
-  .catch(err => console.log(err))
-
-const getSites = (nameLink) =>
-  Promise.all(nameLink.map((pair) => getSite(pair[0], pair[1])))
-
-// finds all available page links
-const loadPages = () =>
-  loadPage('/companies?status=all')
-    .then($ => {
-      let pages = []
-      $('a', '.pager__items').each((i, el) => {
-        let page = $(el).attr('href')
-        pages.push(page)
-      })
-      // last page is redundant
-      pages.pop()
-      return pages
-    })
-
-
-// crawls a page to get all site addresses
-const getPageData = (page) =>
-  loadPage('/companies' + page)
-  .then($ => getSites((getNameLink($))));
-
-function getAllData () {
-  let pageLinks = fillPageLinks()
-
-
 }
 
-
-loadPages()
-  .then(pages => Promise.all(pages.map((page) => {
-    getPageData(page)
-  })))
-  .then(res => {
-    console.log(res)
-    console.log(companies)
-    return companies;
-  })
-  .catch(err => console.log(err))
-
-//Here you specify the export structure
-const specification = {
-  name: { // <- the key should match the actual data key
-    displayName: 'Name', // <- Here you specify the column header
-  },
-  website: {
-    displayName: 'Website',
-  },
-  builtInNYC: {
-    displayName: 'builtInNYC',
-  }
-}
+getDataFromAllPages(0, 3);

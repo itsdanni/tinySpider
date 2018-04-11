@@ -1,5 +1,6 @@
 const excel = require('node-excel-export');
 const fs = require('fs');
+
 // export to excel specification
 // Here you specify the export structure
 const specification = {
@@ -14,19 +15,25 @@ const specification = {
   }
 }
 
-const dataset = [{name: 'test', website: 'test', 'builtInNYC': 'test'}]
-const report = excel.buildExport(
+const generateReport = (dataset) => {
+  excel.buildExport(
   [ // <- Notice that this is an array. Pass multiple sheets to create multi sheet report
     {
-      name: 'Test', // <- Specify sheet name (optional)
+      name: 'Tech company data', // <- Specify sheet name (optional)
       specification: specification, // <- Report specification
       data: dataset // <-- Report data
     }
-  ]
-);
+  ]);
+}
 
-fs.writeFile('Test.xlsx', report, function(err) {
-  if (err) throw err;
-  console.log('saved');
-})
+const exportToFile = (dataset) => {
+  fs.appendFile('techCompanyData.xlsx', generateReport(dataset), function(err) {
+    if (err) throw err;
+    console.log('saved');
+  })
+}
+
+module.exports = {
+  exportToFile
+}
 
