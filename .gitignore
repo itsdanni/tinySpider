@@ -1,2 +1,2 @@
-# ignore excel files
-/*.xlsx
+*.xlsx
+node_modules
