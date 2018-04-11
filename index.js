@@ -76,6 +76,7 @@ function getDataFromAllPages(start, end) {
     for (let i = start; i < end; i++) {
       Promise.all(pages[i])
       .then(companies => {
+        // exports per page
         exportToFile(companies)
       })
       .catch(err => console.log(err));

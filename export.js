@@ -1,33 +1,19 @@
 
 const fs = require('fs');
 
-// export to excel specification
-// Here you specify the export structure
-// const specification = {
-//   name: { // <- the key should match the actual data key
-//     displayName: 'Name', // <- Here you specify the column header
-//   },
-//   website: {
-//     displayName: 'Website',
-//   },
-//   builtInNYC: {
-//     displayName: 'builtInNYC',
-//   }
-// }
+// joins object properties with a tab as table columns
+function stringifyObject(obj) {
+  return Object.keys(obj).map(key => obj[key]).join('\t')
+}
 
-// const generateReport = (dataset) => {
-//   excel.buildExport(
-//   [ // <- Notice that this is an array. Pass multiple sheets to create multi sheet report
-//     {
-//       name: 'Tech company data', // <- Specify sheet name (optional)
-//       specification: specification, // <- Report specification
-//       data: dataset // <-- Report data
-//     }
-//   ]);
-// }
+const formatData = (dataset) => {
+  let pageStr = dataset.map(obj => stringifyObject(obj)).join('\n');
+  return pageStr + '\n'
+}
+
 
 const exportToFile = (dataset) => {
-  fs.appendFile('techCompanyData.txt', dataset, function(err) {
+  fs.appendFile('companyData.txt', formatData(dataset), function(err) {
     if (err) throw err;
     console.log('saved');
   })
