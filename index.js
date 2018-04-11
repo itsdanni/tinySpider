@@ -1,27 +1,40 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const Promise = require('bluebird');
-
 const base = 'https://www.builtinnyc.com';
+const companies = [];
 
-let companies = [];
+// prepopulate page links to crawl
+function fillPageLinks () {
+  let pageLinks = []
+  for (let i = 0; i < 139; i++) {
+    pageLinks.push(`/companies?status=all&page=${i}`)
+  }
+  return pageLinks;
+}
+// creates a custom axios instance per page, returns an array of page axios
+function makeAxios (pageLinks) {
+  return pageLinks.map(link =>
+    axios.create({
+      url: base + link,
+      timeout: 10000
+    }));
+  }
 
-// gets initial data for one page
-const loadPage = (page) => axios.get(base + page)
-  .then(res => cheerio.load(res.data));
+function getPagesAsync (pageAxios) {
+  return Promise.all(pageAxios.map(pageAxio => {
+    pageAxio()
+    .then(res => {
+      let $ = cheerio.load(res.data);
+      let pageList = []
+      $('.company-card').each((i, el) => {
+        let name = $(el).find('.title').text();
+        let locallink = $('a', '.wrap-view-page', el).attr('href');
+        pageList.push([name, locallink]);
+      });
 
-// returns an array of companies with name and link tuples
-const getNameLink = ($) => {
-  let nameLink = []
-  $('.company-card').each((i, el) => {
-      let name = $(el).find('.title').text();
-      let link = $('a', '.wrap-view-page', el).attr('href');
-      if (link !== 'undefined'){
-        nameLink.push([name, link]);
-      }
-    });
-  //console.log(nameLink)
-  return nameLink;
+    })
+  }))
 }
 
 // helper function for getSites
@@ -63,6 +76,13 @@ const getPageData = (page) =>
   loadPage('/companies' + page)
   .then($ => getSites((getNameLink($))));
 
+function getAllData () {
+  let pageLinks = fillPageLinks()
+
+
+}
+
+
 loadPages()
   .then(pages => Promise.all(pages.map((page) => {
     getPageData(page)
@@ -74,3 +94,15 @@ loadPages()
   })
   .catch(err => console.log(err))
 
+//Here you specify the export structure
+const specification = {
+  name: { // <- the key should match the actual data key
+    displayName: 'Name', // <- Here you specify the column header
+  },
+  website: {
+    displayName: 'Website',
+  },
+  builtInNYC: {
+    displayName: 'builtInNYC',
+  }
+}
