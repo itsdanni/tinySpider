@@ -298,3 +298,283 @@ Boom Fantasy	/company/boom-fantasy	https://www.boomfantasy.com/
 Toymail	/company/toymail	http://www.toymail.co
 REINGE	/company/reinge	https://reingeclothing.com/
 Startup Institute	/company/startup-institute	http://www.startupinstitute.com
+Omega-R	/company/omega-r	http://www.omega-r.com/
+Bond Gifting Inc.	/company/bond-gifting-inc	https://bond.co/
+LiquidAdX	/company/liquidadx-0	http://liquidadx.com
+Schism Worldwide	/company/schism-worldwide	http://www.schismworldwide.com
+Tweed Wolf	/company/tweed-wolf	http://tweedwolf.com
+Dumbo Moving and Storage NYC	/company/dumbo-moving-and-storage-nyc	http://dumbomoving.com/
+TalentsFromIndia	/company/talentsfromindia	https://www.talentsfromindia.com/
+OrderGroove	/company/ordergroove	http://www.ordergroove.com/
+BriskSale.com	/company/brisksalecom	https://www.brisksale.com/
+Noble Web Studio Private Limited	/company/noble-web-studio-private-limited	http://www.noblewebstudio.com
+E Com Security Solutions	/company/e-com-security-solutions	https://www.ecomsecurity.org
+Octal Info Solution Pte Ltd	/company/octal-info-solution-pte-ltd	http://www.octalsoftware.com.sg
+Member.buzz	/company/memberbuzz	https://www.member.buzz/
+Zinc Learning Labs	/company/zinc-learning-labs	http://www.zinclearninglabs.com
+Aubiz.net	/company/aubiznet	http://www.aubiz.net/
+Ritual	/company/ritual	http://www.ritual.co
+Meural	/company/meural	http://meural.com/
+Thrillist Media Group	/company/thrillist-media-group	http://www.thrillistmediagroup.com
+Ticketchat	/company/ticketchat	https://ticketchat.com/
+mindbodygreen	/company/mindbodygreen	http://www.mindbodygreen.com
+Fuckup Nights	/company/fuckup-nights	http://www.fuckupnights.com
+Optimove	/company/optimove	http://www.optimove.com/
+BankMobile	/company/bankmobile	https://www.bankmobile.com/
+Adore Me	/company/adore-me	http://www.adoreme.com
+Medici Firma	/company/medici-firma	http://www.medicifirma.com
+VTS3	/company/vts3	http://vts3.com/
+FriendlyData	/company/friendlydata	http://friendlydata.io/
+Bloomojo	/company/bloomojo	http://bloomojo.com
+Bevel Payment Solutions	/company/bevel-payment-solutions	http://www.bevelpayment.com
+SheKnows	/company/sheknows	http://corporate.sheknows.com/
+CourseHorse	/company/coursehorse	https://coursehorse.com
+Bringhub	/company/bringhub	http://bringhub.com
+Zepharmacy	/company/zepharmacy	http://www.zepharmacy.com/abortion-pill.html
+Paro	/company/paro	http://www.paro.io/
+MTP Kit Online	/company/mtp-kit-online	http://www.zepharmacy.com/mtp-kit.html
+Genericviagrarx	/company/genericviagrarx	http://www.genericviagrarx.com/generic-viagra.html
+Tadalis SX Online	/company/tadalis-sx-online	http://www.genericviagrarx.com/tadalis-sx.html
+Parsec	/company/parsec	http://www.parsec.media/
+Havenly	/company/havenly	http://www.havenly.com
+Majestyk	/company/majestyk	http://majestykapps.com/
+Asahi Technologies LLC	/company/asahi-technologies-llc	http://www.asahitechnologies.com
+Temboo	/company/temboo	https://temboo.com/
+Fueled	/company/fueled	http://Fueled.com
+Visify	/company/visify	https://visify.com
+MobiCommerce	/company/mobicommerce	https://www.mobicommerce.net/
+Tribeca Venture Partners	/company/tribeca-venture-partners	http://tribecavp.com/
+Yieldbot	/company/yieldbot	http://www.yieldbot.com
+Splice	/company/splice	http://splice.com
+WitLytic	/company/witlytic	http://witlytic.net
+Gooroo	/company/gooroo	https://www.gooroo.com/
+'Braze (formerly Appboy)	/company/braze-formerly-appboy	http://www.appboy.com
+Mediachain	/company/mediachain	http://www.mediachain.io/
+Rentigo LLC	/company/rentigo-llc	http://www.rentigo.com
+Matter	/company/matter	http://matter.vc/
+2Polyglot	/company/2polyglot	https://2polyglot.com
+QuadLabs Technologies Pvt Ltd	/company/quadlabs-technologies-pvt-ltd	http://quadlabs.com
+Underdog.io	/company/underdogio	http://underdog.io
+Doolli	/company/doolli	http://www.doolli.com
+Animoto	/company/animoto	http://www.animoto.com
+Spring Moves Inc	/company/spring-moves-inc	http://springmoves.com
+Sensei	/company/sensei	http://www.citymile.com.br
+Motor Mouth	/company/motor-mouth	https://motormouth.com.au/mobile-app.html
+LittleThings	/company/littlethings	http://www.littlethings.com/
+ff Venture Capital	/company/ff-venture-capital	http://ffvc.com/
+Outcome Health	/company/outcome-health	http://www.outcomehealth.com
+FirstMark Capital	/company/firstmark-capital	http://firstmarkcap.com/
+Mr PDF Editor - Edit PDF Documents, PDF to Word, PDF Forms for Business	/company/mr-pdf-editor-edit-pdf-documents-pdf-word-pdf-forms-business	http://www.mrpdfeditor.com
+Great Oaks Venture Capital	/company/great-oaks-venture-capital	http://www.greatoaksvc.com/
+Nativa World Inc	/company/nativa-world-inc	http://www.nativa-world.com
+Influenster	/company/influenster	http://www.influenster.com
+Boxed	/company/boxed	http://Boxed.com
+Outobus	/company/outobus	http://www.outobus.co
+Lerer Hippeau Ventures	/company/lerer-hippeau-ventures	http://lererhippeau.com/
+Liberty City Ventures	/company/liberty-city-ventures	http://www.libertycityventures.com/
+Glossier	/company/glossier	http://glossier.com
+VidMob	/company/vidmob	http://vidmob.com
+Revenue River Marketing	/company/revenue-river-marketing	http://revenueriver.co
+Law Offices of Jay S. Knispel, LLC	/company/law-offices-jay-s-knispel-llc	http://www.jknylaw.com/
+Grown Ocean	/company/grown-ocean	http://www.grownocean.com
+Quotidian Ventures	/company/quotidian-ventures	http://www.quotidian.co/
+Next Caller	/company/next-caller	http://nextcaller.com
+Regalli	/company/regalli	http://regalii.com
+Chrono24	/company/chrono24	http://chrono24.com
+Brainly	/company/brainly	https://brainly.co/
+Hightower	/company/hightower	http://gethightower.com
+littleBits	/company/littlebits	http://littlebits.cc
+Alta Editions	/company/alta-editions	http://www.altaeditions.com/
+Demand Media	/company/demand-media	http://www.demandmedia.com/
+BlueCart, Inc.	/company/bluecart-inc	http://www.bluecart.com
+Rocketmiles	/company/rocketmiles	http://www.rocketmiles.com
+Anyone Can Learn To Code	/company/anyone-can-learn-code	http://www.anyonecanlearntocode.com
+WingDing	/company/wingding	http://wingdingapp.com
+Croissant	/company/croissant	https://www.getcroissant.com
+Teckst	/company/teckst	http://www.teckst.com
+KUARIX	/company/kuarix	http://kuarix.com
+DADA	/company/dada	https://dada.nyc
+Melty Cone Video	/company/melty-cone-video	http://www.meltycone.com
+BOLDstart Ventures	/company/boldstart-ventures	http://www.boldstart.vc/
+Bowery Capital	/company/bowery-capital	http://www.bowerycap.com/
+Major League Hacking	/company/major-league-hacking	https://mlh.io
+Studio Simpatico	/company/studio-simpatico	http://www.studiosimpati.co
+TradeBlock	/company/tradeblock-0	https://tradeblock.com
+American Prison Data Systems, PBC	/company/american-prison-data-systems-pbc	http://www.apdscorporate.com
+HUNTER	/company/hunter	http://www.gethunter.com
+Snaps	/company/snaps	http://www.makesnaps.com
+Ecommerce Partners	/company/ecommerce-partners	http://www.ecommercepartners.net/
+SAF Platform	/company/saf-platform	http://www.safplatform.com/
+Round	/company/round	https://round.im
+Crowded	/company/crowded	https://crowded.com/
+QuiO	/company/quio	http://www.quio.com
+Force Therapeutics	/company/force-therapeutics	https://www.forcetherapeutics.com/
+Odeion	/company/odeion	http://www.odeionapp.com
+Thirstie	/company/thirstie	https://thirstie.com/
+Blockstack	/company/blockstack	https://blockstack.org/
+Rake	/company/rake	http://GetRake.io
+Graphixide Inc.	/company/graphixide-inc	http://www.graphixide.com
+Easyship	/company/easyship	http://goeasyship.com/
+eSpark Learning	/company/espark-learning	http://www.esparklearning.com
+One Web Dynamic	/company/one-web-dynamic	http://onewebdynamic.com
+Reputation Runner	/company/reputation-runner	http://www.reputationrunner.com
+Bronx Coworking Space	/company/bronx-coworking-space	http://bronxcoworkingspace.com
+Maxxsafe - Best Enterprise File Sharing Software	/company/maxxsafe-best-enterprise-file-sharing-software	http://www.maxxsafe.com/
+Sabi Sands Lodges Reservations	/company/sabi-sands-lodges-reservations	https://www.sabisandslodges.com/
+Nekki LLC	/company/nekki-llc	http://www.nekki.us
+Apester	/company/apester-0	http://apester.com/
+Zeamo	/company/zeamo	http://zeamo.com
+Simple Booth	/company/simple-booth	http://www.simplebooth.com
+YouMap - The Human Atlas	/company/youmap-human-atlas	http://www.youmap.com
+Rollio	/company/rollio	http://GoRollio.com
+Prescriptive Data	/company/prescriptive-data	http://www.prescriptivedata.io
+Maxxcloud - Best Cloud Document Management Software	/company/maxxcloud-best-cloud-document-management-software	http://maxxcloud.com/
+Craft and Savor	/company/craft-and-savor	https://www.craftandsavor.com
+AdRoll	/company/adroll	https://www.adroll.com/
+Soros Fund Management	/company/soros-fund-management	https://www.crunchbase.com/organization/soros-fund-management#/entity
+FoodNiche Inc	/company/foodniche-inc	http://www.foodniche.me
+Ruca	/company/ruca	http://www.ruca.world
+CITYRTOUR.COM | Strategy Consulting firm	/company/cityrtourcom-strategy-consulting-firm	http://www.cityrtour.com
+Profillic	/company/profillic	http://www.profillic.com
+Moved	/company/moved	http://www.hellomoved.com
+NOWYOURCITY	/company/nowyourcity	http://www.nowyourcity.com
+Landis	/company/landis	https://www.hellolandis.com/
+VRNOVO	/company/vrnovo	http://vrnovo.com
+Concise Group	/company/concise-group	http://www.concisegroup.com/us
+Dealertrack	/company/dealertrack	http://www.dealertrack.com
+EPIC Hybrid Training	/company/epic-hybrid-training-0	https://epichybridtraining.com
+FinTech Studios	/company/fintech-studios	https://fintechstudios.com
+TechHub NYC	/company/techhub-nyc	http://nyc.techub.com
+Bubble	/company/bubble	http://bubble.is
+Brown Deck Innovations	/company/brown-deck-innovations	https://www.browndeck.com
+PROPERTYBOOK NYC	/company/propertybook-nyc	https://propertybook.nyc
+BounceX	/company/bouncex	https://www.bouncex.com/
+BioLite Inc.	/company/biolite-inc-0	http://www.bioliteenergy.com
+Pixt Fashion	/company/pixt-fashion	http://www.pixtfashion.com
+Shortcut	/company/shortcut	http://www.getshortcut.co
+Inkitt Inc.	/company/inkitt-inc	
+Micgoat	/company/micgoat	https://www.micgoat.com
+A2ZFame	/company/a2zfame	http://a2zfame.com
+Groupment	/company/groupment-0	http://www.groupment.com
+Audicus	/company/audicus-0	http://audicus.com
+WorksHub	/company/workshub	http://www.works-hub.com
+GPShopper	/company/gpshopper	http://www.gpshopper.com
+Rent the Runway	/company/rent-runway	http://www.renttherunway.com
+DashBid Media	/company/dashbid-media	http://www.dashbid.com
+AppNexus	/company/appnexus	http://www.appnexus.com
+General Assembly	/company/general-assembly	http://generalassemb.ly/
+Chartbeat	/company/chartbeat-0	http://chartbeat.com
+Outbrain	/company/outbrain	https://www.outbrain.com
+L+R	/company/lr	http://levinriegner.com/
+JOOR	/company/joor	http://jooraccess.com
+Betterment	/company/betterment	http://www.betterment.com
+Blue Apron	/company/blue-apron	http://www.blueapron.com
+Body Labs	/company/body-labs	http://www.bodylabs.com
+Velocity Global	/company/velocity-global	http://velocityglobal.com/
+Olo	/company/olo	http://www.olo.com
+Corigin Ventures	/company/corigin-ventures	http://www.corigin.com/ventures/
+Red Sea Ventures	/company/red-sea-ventures	http://www.redseaventures.com/
+Vbout.com	/company/vboutcom	https://www.vbout.com/
+StackOverdrive.io	/company/stackoverdriveio-0	http://stackoverdrive.net
+Hive	/company/hive	https://hive.com/
+AFTERIMAGING	/company/afterimaging	http://www.afterimaging.com
+Glorium Technologies	/company/glorium-technologies	https://gloriumtech.com
+MoneyLion	/company/moneylion	https://www.moneylion.com/
+Voxy	/company/voxy	http://www.voxy.com
+ASL Productions	/company/asl-productions	http://aslproductions.com
+Vab Media Digital Agency	/company/vab-media-digital-agency	http://vabulous.com/
+Kenzan	/company/kenzan	http://kenzan.com/
+Fevo	/company/fevo	http://fevo.com/
+Usabilla	/company/usabilla	http://www.usabilla.com
+Cockroach Labs	/company/cockroach-labs	http://www.cockroachlabs.com
+Master The Talk Consulting	/company/master-talk-consulting	http://www.masterthetalk.com
+NEXTT`	/company/nextt	http://www.nextt.co
+CrownTV	/company/crowntv	https://www.crowntv-us.com/
+MedPut by Aiuto	/company/medput-aiuto	http://www.medput.com
+Cache Ventures	/company/cache-ventures	http://cacheventures.com
+Public	/company/public-0	http://publicnow.com
+MistIQ Technologies	/company/mistiq-technologies	http://www.mistiqtech.com/
+Bizly	/company/bizly	http://www.bizly.com
+Division Of/	/company/division	http://divisionof.com
+Stadium Goods	/company/stadium-goods	http://www.stadiumgoods.com
+Faction Studio	/company/faction-studio	http://www.factionstudio.com/
+Skedaddle	/company/skedaddle	http://www.letskedaddle.com
+Heyday.club	/company/heydayclub	http://heyday.club
+TwentyPine	/company/twentypine	http://twentypine.com/careers/
+VentureSpace	/company/venturespace	http://www.venturespace.nyc
+U. Santini Moving & Storage Brooklyn, New York	/company/u-santini-moving-storage-brooklyn-new-york	http://www.usantini.com/
+Konstant Infosolutions	/company/konstant-infosolutions	https://www.konstantinfo.com
+My Cuistot	/company/my-cuistot	https://www.mycuistot.com
+Active NYC	/company/active-nyc	https://activenyc.com
+Capital City Movers NYC	/company/capital-city-movers-nyc	http://capitalcitymovers.us/
+Volant Trading	/company/volant-trading	http://volanttrading.com
+Shufflrr	/company/shufflrr-0	http://shufflrr.com
+ExecThread Inc.	/company/execthread-inc	http://www.execthread.com
+Networked Insights	/company/networked-insights	http://www.networkedinsights.com
+GoBambino	/company/gobambino	http://www.gobambino.com
+Ladders	/company/ladders	http://www.theladders.com
+HUGY INC.	/company/hugy-inc	http://www.hugy.nyc
+Stamford Venture Partners	/company/stamford-venture-partners	http://www.stamfordventurepartners.com
+Tasting Table	/company/tasting-table	https://www.tastingtable.com/
+ilovestartup.com	/company/ilovestartupcom	http://ilovestartup.com
+Asset	/company/asset	http://www.asset.co
+NestApple	/company/nestapple	http://www.nestapple.com
+EuMotus	/company/eumotus	http://eumotus.com
+Prime Studio Inc.	/company/prime-studio-inc	http://www.primestudio.com
+Collectively	/company/collectively	http://docollectively.com
+Skiplagged	/company/skiplagged	http://skiplagged.com
+Analance	/company/analance	https://analance.ducenit.com/
+Noken	/company/noken	http://www.noken.travel
+WorksHub	/company/workshub-0	http://www.works-hub.com
+Fitnescity	/company/fitnescity	https://www.fitnescity.com/
+Intello	/company/intello	http://www.intello.io
+Day Translations	/company/day-translations	https://www.daytranslations.com/
+AllWork	/company/allwork	https://www.allworknow.com/
+TradeTapp	/company/tradetapp	http://tradetapp.com
+Shapr	/company/shapr	http://www.shapr.co
+Decorilla	/company/decorilla	http://www.decorilla.com
+Laundry Box	/company/laundry-box	http://laundry-box.com/laundry-dry-cleaning-pick-up-delivery-services-buffalo-ny/
+Big Apple Movers NYC	/company/big-apple-movers-nyc	http://bigapplemoving.com
+Pond5	/company/pond5	https://www.pond5.com
+KapitalWise	/company/kapitalwise	https://kapitalwise.com
+Jetty	/company/jetty	https://www.jetty.com
+BeMe	/company/beme	https://beme.com/
+Forsake	/company/forsake	http://forsake.co
+NMRKT	/company/nmrkt	http://nmrkt.com
+3floz	/company/3floz	http://3floz.com
+Attensee	/company/attensee	http://atensee.com
+Brewla	/company/brewla	http://www.BrewlaBars.com
+Interface Foundry	/company/interface-foundry	http://interfacefoundry.com
+Stylitics	/company/stylitics	http://stylitics.com
+Manna Pro Products	/company/manna-pro-products	http://mannapro.com
+Roomer	/company/roomer	http://roomertravel.com
+Calcbench	/company/calcbench	http://www.calcbench.com
+BeneStream	/company/benestream	http://benestream.com
+Campus Jobs	/company/campus-jobs	http://www.campusjobs.org
+ZaoZao	/company/zaozao	http://www.shopzaozao.com
+Pathgather	/company/pathgather	http://www.pathgather.com
+VectorMAX	/company/vectormax	http://vectormax.com/vmax2013/index.html
+BlueSmart	/company/bluesmart	http://bluesmart.com/
+Keepr	/company/keepr	http://keepr.com
+Yoga Vida	/company/yoga-vida	http://yogavida.com
+BizSlate	/company/bizslate	http://www.bizslate.com
+Moonit	/company/moonit	http://www.moonit.com
+Green Blender	/company/green-blender	http://greenblender.com
+Eyeview	/company/eyeview	http://www.eyeviewdigital.com
+CityRow	/company/cityrow	http://www.cityrow.com
+Taaneh	/company/taaneh	http://taaneh.com
+Locket	/company/locket	http://getlocket.com
+Culinary Agents	/company/culinary-agents	http://culinaryagents.com
+Didit	/company/didit	http://www.didit.com
+Rally Bus	/company/rally-bus	http://rallybus.net/
+Treasurebee	/company/treasurebee	http://treasurebee.com
+Tentrr	/company/tentrr	http://www.tentrr.com
+GET//OUT	/company/getout	http://getout.io
+ALICE	/company/alice	https://www.aliceapp.com/
+Zipari	/company/zipari	http://www.zipari.com
+Cirrus Data Solutions	/company/cirrus-data-solutions	http://cdsi.us.com
+NodeSource	/company/nodesource	http://nodesource.com
+Malin & Goetz	/company/malin-goetz	http://www.malinandgoetz.com
+Imperative	/company/imperative	http://imperative.com
+Source3	/company/source3	http://www.source3.io
+Biz2Credit	/company/biz2credit	http://www.biz2credit.com

@@ -5,6 +5,12 @@ const exportToFile = require('./export').exportToFile;
 
 const base = 'https://www.builtinnyc.com';
 
+const config = (link) => {
+  return {
+    url: link,
+    timeout: 10000
+  }
+}
 // constructor function for company data object
 function Company(name, builtInNYC, website){
   this.name = name;
@@ -22,7 +28,7 @@ function getWebsite ($) {
 }
 // asynchronously get cheerified data on the specified link
 const cheerifiyAsync = (link) =>
-  axios.get(link)
+  axios(config(link))
   .then(res => cheerio.load(res.data))
   .catch(err => console.log('error getting page ' + link + err))
 
@@ -71,4 +77,5 @@ function getDataFromAllPages(start, end) {
   });
 }
 
-getDataFromAllPages(14, 15);
+getDataFromAllPages(30, 40);
+

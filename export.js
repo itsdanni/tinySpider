@@ -13,7 +13,7 @@ const formatData = (dataset) => {
 
 
 const exportToFile = (dataset, i) => {
-  fs.appendFile('companyData.txt', formatData(dataset), function(err) {
+  fs.appendFile('newCompData.txt', formatData(dataset), function(err) {
     if (err) throw err;
     console.log(i);
   })
