@@ -1,7 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const Promise = require('bluebird');
-//const debug = require('axios-debug-log');
 const exportToFile = require('./export').exportToFile;
 
 const base = 'https://www.builtinnyc.com';
@@ -9,7 +8,7 @@ const base = 'https://www.builtinnyc.com';
 const config = (link) => {
   return {
     url: link,
-    timeout: 10000,
+    timeout: 20000,
     transformResponse: [function (data) {
       return cheerio.load(data);
     }],
@@ -27,8 +26,9 @@ function getName ($, el) {
 function getBuiltInNYC ($, el) {
   return $('a', '.wrap-view-page', el).attr('href'); // /company/company.com
 }
-function getWebsite ($) {
-  return $('a', '.field_company_website').attr('href');
+function getWebsite ($, name) {
+  if (typeof($) !== 'function') return console.log('cannot get data from ' + name)
+  else return $('a', '.field_company_website').attr('href');
 }
 // asynchronously get cheerified data on the specified link
 const cheerifiyAsync = (link) =>
@@ -40,7 +40,7 @@ const cheerifiyAsync = (link) =>
 function makeCompanyPromise (name, builtInNYC) {
   return cheerifiyAsync(base + builtInNYC)
   .then(companyData => {
-    let website = getWebsite(companyData)
+    let website = getWebsite(companyData, name)
     //console.log(website)
     let company = new Company(name, builtInNYC, website)
     return company;
@@ -77,9 +77,10 @@ function getDataFromAllPages(start, end) {
       .then($ => companyPromisesPerPage($))
       .then(companyPromises => Promise.all(companyPromises))
       .then(companies => exportToFile(companies, i))
-      .catch(err => console.log('error loading page ' + i + ': ' + err))
   });
 }
 require('axios-debug-log')
-getDataFromAllPages(31, 35);
+
+//getDataFromAllPages(134, 139)
+
 
