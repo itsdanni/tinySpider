@@ -13,6 +13,12 @@ adler-32@:
     exit-on-epipe "~1.0.1"
     printj "~1.1.0"
 
+axios-debug-log@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/axios-debug-log/-/axios-debug-log-0.4.0.tgz#f3fee09b3c0c52cc710cf32c099ec04206c2f7b4"
+  dependencies:
+    debug "^3.0.0"
+
 axios@^0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
@@ -99,7 +105,7 @@ css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
 
-debug@^3.1.0:
+debug@^3.0.0, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:

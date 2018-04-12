@@ -578,3 +578,103 @@ Malin & Goetz	/company/malin-goetz	http://www.malinandgoetz.com
 Imperative	/company/imperative	http://imperative.com
 Source3	/company/source3	http://www.source3.io
 Biz2Credit	/company/biz2credit	http://www.biz2credit.com
+Slon Media	/company/slon-media	https://slonmedia.com/
+Simple Outreach	/company/simple-outreach	https://www.simpleoutreach.com
+Curated	/company/curated	http://www.curated.io
+Enfusion	/company/enfusion	http://www.enfusionsystems.com/
+GoReadyMade	/company/goreadymade	http://www.goreadymade.com
+Rejoin Web Solution Pvt. Ltd	/company/rejoin-web-solution-pvt-ltd	https://www.rejoinwebsolution.com
+OMNIGON	/company/omnigon	http://www.omnigon.com/en
+Qrypt	/company/qrypt	https://www.qrypt.com
+OnTarget Technologies	/company/ontarget-technologies	http://www.ontargetcloud.com
+Delmondo	/company/delmondo	http://delmondo.co
+Agilityio	/company/agilityio	https://www.agilityio.com/
+CocuSocial	/company/cocusocial	http://www.cocusocial.com
+ARTA	/company/arta	http://www.shiparta.com
+Cyprus Legend	/company/cyprus-legend	https://www.cypruslegend.com/
+The Brihaspati Infotech	/company/brihaspati-infotech	https://www.brihaspatitech.com
+DSI Spaceframes: Building Your Vision	/company/dsi-spaceframes-building-your-vision	http://dsispaceframes.com/
+Dotdash	/company/dotdash	http://www.dotdash.com
+GameChanger	/company/gamechanger	https://gc.com
+Cedato	/company/cedato	http://www.cedato.com
+Qutun	/company/qutun	https://qutun.in/
+Campus Job	/company/campus-job	http://thecampusjob.com
+Duffy	/company/duffy	
+Innovational Funding	/company/innovational-funding	http://ifunding.co
+Mashable	/company/mashable	http://www.mashable.com
+Percolate	/company/percolate	http://percolate.com
+Kinsa	/company/kinsa	http://www.kinsahealth.com
+CloudPeeps	/company/cloudpeeps	https://www.cloudpeeps.com/
+EquityZen	/company/equityzen	https://www.equityzen.com
+8 Enterprises	/company/8-enterprises	https://weare8.com/
+Tripda	/company/tripda	http://tripda.com/
+Patron Technology	/company/patron-technology	http://patrontechnology.com
+Signal360	/company/signal360	http://signal360.com
+Routehappy	/company/routehappy	http://www.routehappy.com
+Stowaway Cosmetics	/company/stowaway-cosmetics	http://stowawaycosmetics.com
+Nassau Reinsurance Group	/company/nassau-reinsurance-group	http://nsre.com
+MaestroIQ	/company/maestroiq	http://www.maestroiq.com
+Beautified	/company/beautified	http://getbeautified.com
+Switch	/company/switch	http://switchapp.com
+Mintz Group	/company/mintz-group	http://www.mintzgroup.com
+Thinx	/company/thinx	http://www.shethinx.com
+Accomplish	/company/accomplish	http://www.nowaccomplish.com
+Locus Analytics	/company/locus-analytics	http://www.home.locus
+Taskade	/company/taskade	http://www.taskade.com
+Away	/company/away	http://awaytravel.com
+Feather	/company/feather	https://rentfeather.com/
+MakeSpace	/company/makespace	https://www.makespace.com/
+Factory PR	/company/factory-pr	http://www.factorypr.com
+Simplifeye	/company/simplifeye	http://www.simplifeye.co
+Publicis Media - Data, Technology & Innovation (DTI)	/company/publicis-media-data-technology-innovation-dti	http://www.publicisgroupe.com/en/services/services-publicis-media-en
+Exeq	/company/exeq	http://exeq.com
+Movable Ink	/company/movable-ink	http://www.movableink.com
+Kickstarter	/company/kickstarter	https://www.kickstarter.com/
+x.ai	/company/xai	http://x.ai
+Docurated	/company/docurated	http://www.docurated.com/
+Quartet	/company/quartet	http://www.quartethealth.com
+Intersection	/company/intersection	https://www.intersection.com/
+Kinnek	/company/kinnek	http://Kinnek.com
+Livestream	/company/livestream	https://livestream.com/
+Handy	/company/handy	http://www.handy.com
+Resy	/company/resy	http://resy.com/
+Common	/company/common	http://common.com/
+Logoitech | Graphic Design Agency	/company/logoitech-graphic-design-agency	http://www.logoitech.biz
+Adverator	/company/adverator	http://www.adverator.com
+VideoDesk	/company/videodesk	http://videodesk.com
+CafeX Communications	/company/cafex-communications	https://www.cafex.com/
+PuzzleSocial	/company/puzzlesocial	http://www.puzzlesocial.com
+Audiam	/company/audiam	http://www.audiam.com/
+Minus	/company/minus	http://minus.com
+WeWork	/company/wework	https://www.wework.com/
+ZergNet	/company/zergnet	http://www.zergnet.com/info
+Tracx	/company/tracx	http://www.tracx.com
+Quirky	/company/quirky	http://www.quirky.com/
+Bonafide.io	/company/bonafideio	https://bonafide.io/
+Servy	/company/servy	http://www.servyapp.com/
+Drawbridge Networks	/company/drawbridge-networks	http://drawbirdgenetworks.com
+Defy Ventures	/company/defy-ventures	http://www.defyventures.org
+Edusim	/company/edusim	http://www.edusim.co/
+innRoad	/company/innroad	http://innroad.com/
+The Business Insider	/company/business-insider	http://www.businessinsider.com
+Maple	/company/maple	https://maple.com/
+monday.com	/company/mondaycom	https://monday.com/
+Upfluence	/company/upfluence	http://www.upfluence.com
+WorkStride	/company/workstride	http://www.workstride.com
+NYIM Training	/company/nyim-training	http://training-nyc.com
+Priority Private Care	/company/priority-private-care	http://www.priorityprivatecare.com
+Myassignmenthelpau	/company/myassignmenthelpau	https://www.myassignmenthelpau.com/
+MirrorMe3D	/company/mirrorme3d	http://www.mirrorme3d.com
+Unified Theory	/company/unified-theory	http://unified-theory.co
+RubiconMD	/company/rubiconmd-1	https://rubiconmd.com/
+Work & Co.	/company/work-co-3	http://work.co
+Arkadium	/company/arkadium	http://www.arkadium.com
+Arkadium	/company/arkadium-0	http://www.arkadium.com
+Arkadium	/company/arkadium-1	http://www.arkadium.com
+Arkadium	/company/arkadium-2	http://www.arkadium.com
+PatronManager	/company/patronmanager	https://PatronManager.com
+Warby Parker	/company/warby-parker	http://www.warbyparker.com
+Etsy	/company/etsy	https://www.etsy.com
+DataCamp	/company/datacamp	http://www.datacamp.com
+TuneCore	/company/tunecore	http://www.tunecore.com
+The Artistic Pursuit LLC	/company/artistic-pursuit-llc	http://www.theartisticpursuit.com

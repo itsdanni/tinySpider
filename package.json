@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
+    "axios-debug-log": "^0.4.0",
     "bluebird": "^3.5.1",
     "cheerio": "^1.0.0-rc.2",
     "node-excel-export": "^1.4.3"
