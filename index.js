@@ -30,11 +30,9 @@ const cheerifiyAsync = (link) =>
 function makeCompanyPromise (name, builtInNYC) {
   return cheerifiyAsync(base + builtInNYC)
   .then(companyData => {
-
     let website = getWebsite(companyData)
-
+    //console.log(website)
     let company = new Company(name, builtInNYC, website)
-
     return company;
   })
   .catch(err => console.log(err));
@@ -56,7 +54,7 @@ function companyPromisesPerPage ($) {
 // creates an array containing integers from [start, end)
 function createArr (start, end) {
   let arr = [];
-  for (let i = 0; i < end; i++) {
+  for (let i = start; i < end; i++) {
     arr.push(i);
   }
   return arr;
@@ -64,24 +62,13 @@ function createArr (start, end) {
 // https://www.builtinnyc.com/companies?status=all&page=138
 function getDataFromAllPages(start, end) {
   let arr = createArr(start, end)
-  let pagePromises = arr.map(i => {
-    return cheerifiyAsync(base + `/companies?status=all&page=${i}`)
-    .then($ => {
-      return companyPromisesPerPage($)
-    });
+  arr.forEach(i => {
+    cheerifiyAsync(base + `/companies?status=all&page=${i}`)
+      .then($ => companyPromisesPerPage($))
+      .then(companyPromises => Promise.all(companyPromises))
+      .then(companies => exportToFile(companies, i))
+      .catch(err => console.log('error loading page ' + i + err))
   });
-
-  Promise.all(pagePromises)
-  .then(pages => {
-    for (let i = start; i < end; i++) {
-      Promise.all(pages[i])
-      .then(companies => {
-        // exports per page
-        exportToFile(companies)
-      })
-      .catch(err => console.log(err));
-    }
-  })
 }
 
-getDataFromAllPages(0, 3);
+getDataFromAllPages(14, 15);
